@@ -311,7 +311,7 @@ body
     width: 80px;
     transition: 1s;
 }
-@media(max-width: 360px)
+@media(max-width: 767px)
 {
     .col-md-6 img 
     {
