@@ -1,0 +1,315 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+#header
+{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(backgrounds.jpg);
+    background-position: top left;
+    background-attachment: fixed;
+
+}
+.user-box
+{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.user-box img
+{
+    border-radius: 50%;
+    width: 280px;
+    border: 2px solid #FFFFFF
+}
+.user-box h1
+{
+    color: white;
+    margin: 10px
+}
+.user-box p
+{
+    color: white;
+}
+.scroll-button
+{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #FFFFFF;
+    padding: 10px 10px 20px;
+    border-radius: 30px;
+}
+.scroll-bar span
+{
+    border: 2px solid #FFFFFF;
+    font-size: 10px;
+    border-radius: 30px;
+}
+.scroll-bar
+{
+    animation: mover 1s infinite alternate;
+
+} 
+@keyframes mover
+{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+.col-md-6 img
+{
+    border-radius: 30px;
+    margin-bottom: 40px;
+    
+}
+#info 
+{
+    background-color: rgba(243, 242, 242, 0.753);
+    
+}
+.about
+{
+    padding-top: 20px;
+    margin-bottom: -140px;
+
+}
+.about h3
+{
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.nav-bar
+{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar-brand img
+{
+    height: 40px;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.navbar-nav
+{
+    float: right;
+    text-align: right;
+}
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+.progress
+{
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+.progress-bar
+{
+    border-radius: 16px;
+    background: black !important;
+}
+
+.resume
+{
+    margin-top: -40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background: rgba(243, 242, 242, 0.753);
+}
+.resume h3
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.timeline
+{
+    list-style-type: none;
+    position: relative;
+}
+.timeline::before
+{
+    content: '';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+
+}
+.timeline li
+{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    background: white;
+}
+.timeline li h4
+{
+    background-color: black;
+    padding: 5px 0 5px 20px;
+    color: white;
+    font-size: 15px;
+}
+.timeline li::before
+{
+    content: '';
+    background: #FFFFFF;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+.projects
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.projects h1
+{
+    margin-bottom: 10px;
+}
+.projects-box
+{
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius:50px;
+}
+.projects-box feFuncA
+{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.projects-box span
+{
+    margin: 3px;
+    font-weight: bold;
+}
+
+.projects-box p
+{
+    font-size: 15px;
+    margin-top: 5px;
+    color: black
+}
+.projects-box:hover
+{
+    background: rgb(3, 3, 51);
+    color: white;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 1s;
+}
+.projects-box:hover p
+{
+    color:rgb(238, 238, 238);
+}
+.contact
+{
+    padding-top: 50px;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(backgrounds.jpg);
+    background-position: top left;
+    background-attachment: fixed;
+    color: white;
+}
+.contact .row
+{
+    padding: 30px;
+    font-size: 20px;
+}
+.contact .column1
+{
+    padding: 30px 0;
+    font-size: 20px;
+}    
+.contact .col-md-4 .fa
+{
+    padding: 10px;
+    font-size: 30px;
+}
+.contact .column1 .fa
+{
+    padding: 10px;
+    font-size: 30px;
+}
+.contact .btn
+{
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+}
+.contact .btn:focus
+{
+    box-shadow: none !important;
+}
+.contact .btn:hover
+{
+    border: 2px solid black !important;
+    background: black !important;
+    transition: 0.6s;
+}
+.contact .btn .fa
+{
+    margin-right: 10px;
+}
+.footer
+{
+    background: black;
+    height: 50px;
+    margin-top: 50px;
+    color: white;
+    padding-top: 10px;
+}
+
+
+.media-icons
+{
+    top: 50%;
+    transform: translate(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+}
+
+.media-icons ul li
+{
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: white;
+    background: black;
+}
+
+.media-icons ul li:hover
+{
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+}
+
+
