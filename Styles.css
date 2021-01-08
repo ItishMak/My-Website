@@ -311,5 +311,13 @@ body
     width: 80px;
     transition: 1s;
 }
+@media(max-width: 360px)
+{
+    .col-md-6 img 
+    {
+        width: 50%;
+    }
+}
+
 
 
